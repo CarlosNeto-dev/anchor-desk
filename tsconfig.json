@@ -6,9 +6,11 @@
     "module": "ES6",
     "strict": true
   },
+
   "include": [
     "src/ts/**/*"
   ],
+  
   "watchOptions": {
     "watchFile": "priorityPollingInterval",
     "watchDirectory": "dynamicPriorityPolling",
