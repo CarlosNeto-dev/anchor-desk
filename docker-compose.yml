@@ -1,0 +1,22 @@
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: workspace/Dockerfile
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    container_name: anchor-desk-terminal
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./dist:/app/dist
+    command: npm run dev
+    ports:
+      - "8081:8080"
+    container_name: anchor-desk-server

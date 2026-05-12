@@ -1,0 +1,59 @@
+# Sistema Operacional - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Sistema Operacional - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Sistema Operacional - Linux
+*~
+.fuse_hidden*
+.directory
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+
+# Python
+venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+pip-log.txt
+
+# TypeScript
+*.tsbuildinfo
+
+# Dist (gerado automaticamente)
+dist/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Docker
+.docker/
+
+# Logs
+logs/
+*.log
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.production

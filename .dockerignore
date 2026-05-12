@@ -1,0 +1,39 @@
+# Sistema Operacional - Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Sistema Operacional - macOS
+.DS_Store
+._*
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+venv/
+env/
+__pycache__/
+
+# Git
+.git/
+.gitignore
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Dist
+dist/
+
+# Docs
+README.md
+*.md
