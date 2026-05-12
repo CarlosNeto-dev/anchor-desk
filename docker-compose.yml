@@ -14,8 +14,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./src:/app/src
-      - ./dist:/app/dist
+      - .:/app
+      - /app/node_modules
     command: npm run dev
     ports:
       - "8081:8080"

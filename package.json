@@ -2,7 +2,7 @@
   "name": "anchor-desk",
   "version": "1.0.0",
   "scripts": {
-    "watch:scss": "sass --watch src/scss:dist/css",
+    "watch:scss": "sass --watch --poll src/scss:dist/css",
     "watch:ts": "tsc --watch",
     "server": "live-server dist --port=8080",
     "dev": "npm run watch:scss & npm run watch:ts & npm run server",

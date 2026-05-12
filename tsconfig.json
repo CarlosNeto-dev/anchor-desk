@@ -8,5 +8,10 @@
   },
   "include": [
     "src/ts/**/*"
-  ]
+  ],
+  "watchOptions": {
+    "watchFile": "priorityPollingInterval",
+    "watchDirectory": "dynamicPriorityPolling",
+    "fallbackPolling": "dynamicPriority"
+  }
 }
