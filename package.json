@@ -6,9 +6,9 @@
     "watch:ts": "tsc --watch",
     "watch:html": "cpx \"src/pages/**/*.html\" dist --watch",
     "server": "live-server dist --port=8080",
-    "dev": "npm run watch:scss & npm run watch:ts & npm run watch:html & npm run server",
-    "build": "sass src/scss:dist/css && tsc && cpx \"src/pages/**/*.html\" dist"
-},
+    "dev": "concurrently \"npm run watch:scss\" \"npm run watch:ts\" \"npm run watch:html\" \"npm run server\"",
+    "build": "sass src/scss:dist/css && tsc && cpx src/pages/**/*.html dist"
+  },
   
   "devDependencies": {
     "sass": "^1.69.0",

@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *::before,
 *::after {
@@ -15,4 +17,30 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
     color: #333;
+}
+
+.content-card-style {
+    background: red;
+}
+
+@keyframes earthquake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(5deg)
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-5deg)
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
